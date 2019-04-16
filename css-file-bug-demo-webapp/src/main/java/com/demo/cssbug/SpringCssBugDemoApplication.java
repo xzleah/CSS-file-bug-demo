@@ -15,7 +15,7 @@ public class SpringCssBugDemoApplication implements WebMvcConfigurer {
 	}
 
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
-		registry.addResourceHandler("*/**")
+		registry.addResourceHandler("/**")
 			.addResourceLocations("classpath:META-INF/resources/")
 			.resourceChain(false)
 			.addResolver(new VersionResourceResolver()
